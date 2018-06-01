@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="minutes.css">
+    <link rel="stylesheet" href="css/minutes.css">
     <title>会議録</title>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -15,21 +15,39 @@
       <div id="category_id">
         <p>会議</p>
         <select name="minutes-title">
-          <option value="#">Option 1</option>
-          <option value="#">Option 2</option>
-          <option value="#">Option 3</option>
-          <option value="#">Option 4</option>
-          <option value="#">Option 5</option>
-          <option value="#">Option 6</option>
-          <option value="#">Option 7</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+          <option value="6">Option 6</option>
+          <option value="7">Option 7</option>
         </select>
       </div>
+      <!--上記の内容記入後表示される場所-->
+      <div id="hidearea">
+        <form action="#" method="post" id="option_name">
+          <p><label for="minutes_name">会議名<span class="required"></span></label>
+            <input type="text" name="name" id="minutes_name" required>
+          </p>
+        </form>
 
-      <form action="#" method="post" id="option_name">
-        <p><label for="minutes_name">会議名<span class="required"></span></label>
-          <input type="text" name="name" id="minutes_name" required>
-        </p>
-      </form>
+        <div class="player">
+          <p>参加者</p>
+          <!--人名-->
+          <div id="player_area">
+            <form action=# method="post" id="name">
+              <p><label for="player_name">人名<span class="required"></span></label>
+                <input type="text" name="name" id="player_name" required>
+              </p>
+            <!--役割-->
+            <form action=# method="post" id="role">
+              <p><label for="player_role">役割<span class="required"></span></label>
+              <input type="text" name="name" id="player_role" required>
+              </p>
+          </div>
+        </div>
+    </div>
     </main>
   </body>
   <sctipt src="js/minutes.js"></script>
