@@ -35,16 +35,23 @@
         <div class="player">
           <p>参加者</p>
           <!--人名-->
-          <div id="player_area">
-            <form action=# method="post" id="name">
-              <p><label for="player_name">人名<span class="required"></span></label>
-                <input type="text" name="name" id="player_name" required>
-              </p>
+          <div id="player_area" class="flex">
+            <div class="player_menu1">
+              <form action=# method="post" id="name">
+                <p><label for="player_name">人名<span class="required"></span></label><br>
+                  <input type="text" name="name" id="player_name" required>
+                </p>
+              </form>
+            </div>
             <!--役割-->
-            <form action=# method="post" id="role">
-              <p><label for="player_role">役割<span class="required"></span></label>
-              <input type="text" name="name" id="player_role" required>
-              </p>
+            <div class="player_menu2">
+              <form action=# method="post" id="role">
+                <p><label for="player_role">役割<span class="required"></span></label><br>
+                <input type="text" name="name" id="player_role" required>
+                <input type="button" value="+" id="checker">
+                </p>
+              </form>
+            </div>
           </div>
         </div>
     </div>
