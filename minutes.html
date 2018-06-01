@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="minutes.css">
+    <title>会議録</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <main>
+      <div id="category_id">
+        <p>会議</p>
+        <select name="minutes-title">
+          <option value="#">Option 1</option>
+          <option value="#">Option 2</option>
+          <option value="#">Option 3</option>
+          <option value="#">Option 4</option>
+          <option value="#">Option 5</option>
+          <option value="#">Option 6</option>
+          <option value="#">Option 7</option>
+        </select>
+      </div>
+
+      <form action="#" method="post" id="option_name">
+        <p><label for="minutes_name">会議名<span class="required"></span></label>
+          <input type="text" name="name" id="minutes_name" required>
+        </p>
+      </form>
+    </main>
+  </body>
+  <sctipt src="js/minutes.js"></script>
+</html>
