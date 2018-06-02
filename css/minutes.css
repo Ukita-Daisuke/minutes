@@ -12,6 +12,6 @@ main {
   display:flex;
 }
 
-.player_menu1,player_menu2 {
-  width:50%;
+.player_menu1{
+  width:490px;
 }
