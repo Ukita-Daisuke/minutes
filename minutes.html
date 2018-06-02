@@ -14,7 +14,7 @@
     <main>
       <div id="category_id">
         <p>会議</p>
-        <select name="minutes-title">
+        <select name="minutes-title" id="button">
           <option value="1">Option 1</option>
           <option value="2">Option 2</option>
           <option value="3">Option 3</option>
@@ -48,8 +48,8 @@
               <form action=# method="post" id="role">
                 <p><label for="player_role">役割<span class="required"></span></label><br>
                 <input type="text" name="name" id="player_role" required>
-                <input type="button" value="+" id="checker">
-                <input type="button" value="-" id="checker">
+                <input type="button" value="+" id="plus">
+                <input type="button" value="-" id="minus">
                 </p>
               </form>
             </div>
@@ -58,5 +58,5 @@
     </div>
     </main>
   </body>
-  <sctipt src="js/minutes.js"></script>
+  <script src="js/minutes.js"></script>
 </html>

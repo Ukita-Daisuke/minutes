@@ -1,3 +1,6 @@
-$("$category_id").ready(function(){
-  $("hidearea").hide(0);
+
+$("#category_id").change(function(){
+  $("#hidearea").show();
 });
+
+$("")
